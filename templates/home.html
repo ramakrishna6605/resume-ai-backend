@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume AI</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+<!-- 🔷 NAVBAR -->
+<nav class="navbar">
+    <div class="logo">ResumeAI</div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/api/resumes/builder/">Build Resume</a></li>
+        <li><a href="/api/resumes/test-template/">Preview</a></li>
+        <li><a href="/api/resumes/upload/">Upload Resume</a></li>
+        <li><a href="/api/resumes/analyze/">Analyze</a></li>
+        <li><a href="/api/resumes/match-jd/">Match JD</a></li>
+    </ul>
+</nav>
+
+<!-- 🔥 HERO SECTION -->
+<section class="hero">
+    <h1>Build AI-Powered Resumes 🚀</h1>
+    <p>Create, analyze, and optimize your resume using AI</p>
+
+    <div class="buttons">
+        <a href="/api/resumes/builder/" class="btn primary">Start Building</a>
+        <a href="/api/resumes/upload/" class="btn secondary">Upload Resume</a>
+    </div>
+</section>
+
+<!-- 🧩 FEATURES -->
+<section class="features">
+
+    <div class="card">
+        <h3>Resume Builder</h3>
+        <p>Create professional resumes with AI assistance</p>
+    </div>
+
+    <div class="card">
+        <h3>ATS Analysis</h3>
+        <p>Check how well your resume performs</p>
+    </div>
+
+    <div class="card">
+        <h3>JD Matching</h3>
+        <p>Match your resume with job descriptions</p>
+    </div>
+
+</section>
+
+</body>
+</html>
