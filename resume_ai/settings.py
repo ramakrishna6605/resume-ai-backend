@@ -33,7 +33,9 @@ DEBUG = os.getenv("DEBUG")=="True"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 ALLOWED_HOSTS = ['*']
-CORS_ALLOW_ALL_ORIGINS = "http://localhost:5173"
+CORS_ALLOW_ALL_ORIGINS = [
+    "http://localhost:5173",
+    "https://smart-resume-ai.netlify.app/",]
 
 # Application definition
 
